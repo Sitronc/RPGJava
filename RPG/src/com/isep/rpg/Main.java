@@ -9,7 +9,19 @@ public class Main {
         System.out.println();
         int JoueurMort = 0;
         int joueur = NbJoueur - JoueurMort;
-        if
+        double nb;
+        nb = Math.random();
+        nb = nb *10;
+        //System.out.println(nb);
+        if (nb < 8)
+        {
+            Enemy enemy = new Enemy(50,5){};
+        }
+        else
+        {
+            Enemy boss = new Enemy(150,25){};
+        }
+
         if (joueur == 0){
             System.out.println("Vous avez perdu");
         }
