@@ -5,6 +5,10 @@ import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.*;
+
+import java.io.File;
+import java.util.ArrayList;
 
 public class HelloController {
     @FXML
@@ -52,6 +56,10 @@ public class HelloController {
         quitter.setVisible(true);
 
         quitter.setVisible(true);
+        //musique();
+        String uriString = new File("D:\\Cours\\Isep\\A1\\Algorithmique\\isep\\src\\main\\resources\\com\\isep\\music\\drillScooby.mp3").toURI().toString();
+        MediaPlayer player = new MediaPlayer( new Media(uriString));
+        player.play();
     }
     @FXML
     protected void quitter()
@@ -62,5 +70,10 @@ public class HelloController {
 
             quitter.setVisible(false);
             quitter.setDisable(true);
+        }
+
+    protected void musique()
+        {
+
         }
 }

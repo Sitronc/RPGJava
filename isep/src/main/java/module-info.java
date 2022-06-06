@@ -9,6 +9,7 @@ module com.isep {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires javafx.media;
 
     opens com.isep to javafx.fxml;
     exports com.isep;
